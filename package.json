@@ -1,0 +1,23 @@
+{
+  "name": "ubuntu",
+  "version": "1.0.0",
+  "description": "ubuntu health care",
+  "source": "index.js",
+  "scripts": {
+    "watch-css": "npx tailwindcss -i ./src/input-style.css -o ./public/styles.css --watch",
+    "start": "parcel index.html",
+    "build": "parcel build public/index.html"
+  },
+  "keywords": [
+    "ubuntu",
+    "health",
+    "care"
+  ],
+  "author": "ubuntudev",
+  "license": "ISC",
+  "dependencies": {
+    "daisyui": "^2.50.0",
+    "parcel": "^2.8.3",
+    "tailwindcss": "^3.2.4"
+  }
+}
