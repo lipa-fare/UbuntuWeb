@@ -3768,6 +3768,10 @@ html {
   padding-bottom: 3rem;
 }
 
+.pt-12 {
+  padding-top: 3rem;
+}
+
 .text-center {
   text-align: center;
 }
