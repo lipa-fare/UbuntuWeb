@@ -26,21 +26,21 @@
     <header class="pb-6 bg-white lg:pb-0">
       <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <!-- lg+ -->
-          <nav class="flex items-center justify-between h-16 lg:h-20">
+          <nav  class="flex items-center justify-between h-16 lg:h-20">
               <div class="flex-shrink-0">
                   <a href="index.html" title="" class="flex">
-                      <img class="w-auto h-8 lg:h-10" src="https://cdn.rareblocks.xyz/collection/celebration/images/logo.svg" alt="" />
+                    <img style="height: 4rem; width: 4rem;" src="Berchman.jpeg" alt="" srcset="">
                   </a>
               </div>
   
-              <button type="button" class="inline-flex p-2 text-black transition-all duration-200 rounded-md lg:hidden focus:bg-gray-100 hover:bg-gray-100">
+              <button type="button" class="inline-flex p-2 text-black transition-all duration-200 rounded-md lg:hidden focus:bg-gray-100 hover:bg-gray-100 ">
                   <!-- Menu open: "hidden", Menu closed: "block" -->
-                  <svg class="block w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg class="block w-6 h-6 smallNavBtn" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
                   </svg>
   
                   <!-- Menu open: "block", Menu closed: "hidden" -->
-                  <svg class="hidden w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg class="hidden w-6 h-6 closeBtn" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                   </svg>
               </button>
@@ -71,25 +71,33 @@
           </nav>
   
           <!-- xs to lg -->
-          <nav class="pt-4 pb-6 bg-white border border-gray-200 rounded-md shadow-md lg:hidden">
+          <nav  style="display: none;" class="pt-4 pb-6 bg-white border border-gray-200 rounded-md shadow-md lg:hidden smallNav">
               <div class="flow-root">
                   <div class="flex flex-col px-6 -my-2 space-y-1">
-                      <a href="#" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600 about"> About </a>
-
+                    <!-- ABOUT SM -->
+                    <div class="aboutBtn" style="cursor: pointer;">
+                      <p class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">About</p>
+                    </div>
+                     
                       <div class="services" style="cursor: pointer;">
                         <p class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">Services</p>
                       </div>
+
+                      <div class="mission" style="cursor: pointer;">
+                        <p class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">Mission</p>
+                      </div>
   
-                      <a href="#" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600 mission"> Mission </a>
-  
-                      <a href="#" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600 contacts"> Contacts </a>
+                      <div class="contact" style="cursor: pointer;">
+                        <p class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">Contact</p>
+                      </div>
                   </div>
               </div>
   
               <div class="px-6 mt-6">
-                  <a href="#" title="" class="inline-flex justify-center px-4 py-3 text-base font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md tems-center hover:bg-blue-700 focus:bg-blue-700" role="button"> Book Now </a>
+                  <a href="contact.html" title="" class="inline-flex justify-center px-4 py-3 text-base font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md tems-center hover:bg-blue-700 focus:bg-blue-700" role="button"> Book Now </a>
               </div>
           </nav>
+
       </div>
   </header>
   
@@ -126,7 +134,7 @@
               <p class="mt-6 text-lg leading-8 text-gray-600">At Baho, we help people live as independently as possible. We help them feel respected and included in their communities. We believe we all have immense potential, and we work hard every day to help the people we serve reach theirs
                 .</p>
             </div>
-            <section class="py-5 bg-white sm:py-16 lg:py-24 serviceSection">
+            <section class="py-5 bg-white sm:py-16 lg:py-0 serviceSection">
               <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                   <div class="grid grid-cols-1 gap-12 text-center sm:grid-cols-2 md:grid-cols-3 lg:gap-y-16">
                       <div>
@@ -272,7 +280,7 @@
         
       </main>
     </div>
-    <div class=" sm:py-32 missionSection">
+    <div class=" sm:py-32 pb-12 pt-10 missionSection">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
           <div class="mx-auto max-w-2xl lg:text-center">
             <h2 class="text-lg font-semibold leading-8 tracking-tight text-indigo-600"></h2>
@@ -288,8 +296,8 @@
 <section class="py-10 bg-gray-100 sm:py-16 lg:py-24">
   <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div class="max-w-2xl mx-auto text-center">
-          <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">How do we create success</h2>
-          <p class="max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
+          <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">How to Reach out to us</h2>
+          <p class="max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600">We would like to meet with you. Your satisfaction is our sole obligation.</p>
       </div>
 
       <ul class="max-w-md mx-auto mt-16 space-y-12">
@@ -297,13 +305,15 @@
               <div class="-ml-0.5 absolute mt-0.5 top-14 left-8 w-px border-l-4 border-dotted border-gray-300 h-full" aria-hidden="true"></div>
 
               <div class="relative flex items-center justify-center flex-shrink-0 w-16 h-16 bg-white rounded-full shadow">
-                  <svg class="w-10 h-10 text-fuchsia-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                  </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-fuchsia-600">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z" />
+                </svg>
+                
               </div>
               <div class="ml-6">
-                  <h3 class="text-lg font-semibold text-black">Create a free account</h3>
-                  <p class="mt-4 text-base text-gray-600">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                  <h3 class="text-lg font-semibold text-black">Reach Out to us</h3>
+                  <p class="mt-4 text-base text-gray-600">We have provided various contacts to reach us. Please feel free to talk to us and we will get back to you immediately.</p>
               </div>
           </li>
 
@@ -316,8 +326,8 @@
                   </svg>
               </div>
               <div class="ml-6">
-                  <h3 class="text-lg font-semibold text-black">Build your website</h3>
-                  <p class="mt-4 text-base text-gray-600">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                  <h3 class="text-lg font-semibold text-black">Choose a Service</h3>
+                  <p class="mt-4 text-base text-gray-600">We offer various services  only for you. To allow us serve you the right service, please choose a service offered by us.</p>
               </div>
           </li>
 
@@ -328,8 +338,8 @@
                   </svg>
               </div>
               <div class="ml-6">
-                  <h3 class="text-lg font-semibold text-black">Release & launch</h3>
-                  <p class="mt-4 text-base text-gray-600">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                  <h3 class="text-lg font-semibold text-black">Book to meet us</h3>
+                  <p class="mt-4 text-base text-gray-600">Schedule with us when to meet. We are glad you reaching this point. You will get attached to a consultant immediately.</p>
               </div>
           </li>
       </ul>
@@ -338,8 +348,8 @@
 
 
   <!-- FOOTER -->
-  <section class=" bg-white sm:py-16 lg:py-20 contactSection">
-    <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+  <section class=" bg-white sm:py-20 sm:m-12 lg:py-20 contactSection">
+    <div class="px-4 pt-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-y-12 lg:gap-x-8 xl:gap-x-20">
             <div class="flex items-start">
                 <svg class="flex-shrink-0 w-10 h-10 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
